@@ -14,5 +14,5 @@ jobs:
 
       - name: Run API test
         run: |
-          cd email && go test . && cd ..
           cd file && go test . && cd ..
+          cd email && go test . && cd ..
