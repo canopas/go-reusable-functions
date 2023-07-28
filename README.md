@@ -38,7 +38,7 @@ func main() {
 }
 ```
 
-For detailed documentation and examples of each function, please refer to the [examples](https://github.com/canopas/go-scaffolds/examples).
+For detailed documentation and examples of each function, please refer to the [examples](https://github.com/canopas/go-scaffolds/tree/main/examples).
 
 ## Contributions and Feedback
 
