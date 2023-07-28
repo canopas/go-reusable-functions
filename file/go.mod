@@ -1,4 +1,4 @@
-module file
+module github.com/cp-sumi-k/go-scaffolds/file
 
 go 1.20
 
