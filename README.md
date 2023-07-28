@@ -19,7 +19,7 @@ This repository aims to provide a solid scaffolds of foundational tools that enh
 
 - If you want to use email function, install package with: 
     ```
-    go get github.com/cp-sumi-k/go-scaffolds/email
+    go get github.com/canopas/go-scaffolds/email
     ```
 
 ## Usage
@@ -30,7 +30,7 @@ go-scaffolds offers a diverse range of utility functions that cater to various a
 package main
 
 import (
-	"github.com/cp-sumi-k/go-scaffolds/email"
+	"github.com/canopas/go-scaffolds/email"
 )
 
 func main() {
@@ -38,7 +38,7 @@ func main() {
 }
 ```
 
-For detailed documentation and examples of each function, please refer to the [examples](https://github.com/cp-sumi-k/go-scaffolds/examples).
+For detailed documentation and examples of each function, please refer to the [examples](https://github.com/canopas/go-scaffolds/examples).
 
 ## Contributions and Feedback
 
@@ -46,4 +46,4 @@ Contributions are highly appreciated! If you find a bug, have a feature request,
 
 ## License
 
-go-scaffolds is open-source and distributed under the [MIT License](https://github.com/cp-sumi-k/go-scaffolds/blob/main/LICENSE).
+go-scaffolds is open-source and distributed under the [MIT License](https://github.com/canopas/go-scaffolds/blob/main/LICENSE).

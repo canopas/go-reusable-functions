@@ -1,4 +1,4 @@
-module github.com/cp-sumi-k/go-scaffolds
+module github.com/canopas/go-scaffolds
 
 go 1.20
 
