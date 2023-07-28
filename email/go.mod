@@ -1,4 +1,4 @@
-module github.com/cp-sumi-k/go-scaffolds
+module github.com/cp-sumi-k/go-scaffolds/email
 
 go 1.20
 
