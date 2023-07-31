@@ -1,9 +1,10 @@
 package examples
 
 import (
-	"email"
 	"embed"
-	"file"
+
+	"github.com/canopas/go-scaffolds/email"
+	"github.com/canopas/go-scaffolds/file"
 
 	log "github.com/sirupsen/logrus"
 )

@@ -21,7 +21,6 @@ This repository aims to provide a solid scaffolds of foundational tools that enh
     ```
     go get github.com/canopas/go-scaffolds/email
     ```
-
 ## Usage
 
 go-scaffolds offers a diverse range of utility functions that cater to various aspects of software development. Here's a quick example of how to use a email function:

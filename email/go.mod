@@ -2,11 +2,9 @@ module github.com/canopas/go-scaffolds/email
 
 go 1.20
 
-replace file => ../file
-
 require (
-	file v0.0.0-00010101000000-000000000000
 	github.com/aws/aws-sdk-go v1.44.311
+	github.com/canopas/go-scaffolds/file v0.0.0-20230728124028-c1cf54ceb9ba
 	github.com/sirupsen/logrus v1.9.3
 	github.com/stretchr/testify v1.8.4
 	gopkg.in/gomail.v2 v2.0.0-20160411212932-81ebce5c23df
