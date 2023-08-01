@@ -1,7 +1,7 @@
-github.com/aws/aws-sdk-go v1.44.311 h1:60i8hyVMOXqabKJQPCq4qKRBQ6hRafI/WOcDxGM+J7Q=
-github.com/aws/aws-sdk-go v1.44.311/go.mod h1:aVsgQcEevwlmQ7qHE9I3h+dtQgpqhFB+i8Phjh7fkwI=
-github.com/canopas/go-reusables/file v0.0.0-20230728124028-c1cf54ceb9ba h1:gpQcNGpvvHIqdxwTsNCyhvPPEEN/3orVH2LtH9JZykY=
-github.com/canopas/go-reusables/file v0.0.0-20230728124028-c1cf54ceb9ba/go.mod h1:Dca6Ud0KVywIASJufNb7P30q3ayO61qtLpHgEBGOq/o=
+github.com/aws/aws-sdk-go v1.44.313 h1:u6EuNQqgAmi09GEZ5g/XGHLF0XV31WcdU5rnHyIBHBc=
+github.com/aws/aws-sdk-go v1.44.313/go.mod h1:aVsgQcEevwlmQ7qHE9I3h+dtQgpqhFB+i8Phjh7fkwI=
+github.com/canopas/go-reusables/file v0.0.0-20230801123715-3957df64671f h1:Ejyyv5MgQJcBEx4CetygghQNVOXXEbxfnx0VRKLvwys=
+github.com/canopas/go-reusables/file v0.0.0-20230801123715-3957df64671f/go.mod h1:G5vEb56L0IbDQdCMictssue3OZ1mPvPe9dJ8nq+ugs8=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
