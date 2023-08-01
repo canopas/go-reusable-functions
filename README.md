@@ -1,14 +1,14 @@
-# go-scaffolds
+# go-reusables
 
-Comprehensive collection of essential and reusable functions for Go developers.
+A comprehensive collection of essential and reusable functions for Go developers.
 
-This repository aims to provide a solid scaffolds of foundational tools that enhance Go programming experiences and streamline the development workflow.
+This repository aims to provide solid reusable functions of foundational tools that enhance Go programming experiences and streamline the development workflow.
 
 ## Features
 
 - 🚀 Streamline development with foundational utility functions.
 - 🛠 Simplify common tasks with reusable code snippets.
-- 🧰 Build upon a strong scaffold of well-tested Go functions.
+- 🧰 Build upon strong reusables of well-tested Go functions.
 - ⚡ Boost productivity and code readability in your projects.
 
 ## Requirements
@@ -17,19 +17,19 @@ This repository aims to provide a solid scaffolds of foundational tools that enh
 
 ## Installation
 
-- If you want to use email function, install package with: 
+- If you want to use the email function, install the package with: 
     ```
-    go get github.com/canopas/go-scaffolds/email
+    go get github.com/canopas/go-reusables/email
     ```
 ## Usage
 
-go-scaffolds offers a diverse range of utility functions that cater to various aspects of software development. Here's a quick example of how to use a email function:
+go-reusables offer a diverse range of utility functions that cater to various aspects of software development. Here's a quick example of how to use a email function:
 
 ```go
 package main
 
 import (
-	"github.com/canopas/go-scaffolds/email"
+	"github.com/canopas/go-reusables/email"
 )
 
 func main() {
@@ -37,7 +37,7 @@ func main() {
 }
 ```
 
-For detailed documentation and examples of each function, please refer to the [examples](https://github.com/canopas/go-scaffolds/tree/main/examples).
+For detailed documentation and examples of each function, please refer to the [examples](https://github.com/canopas/go-reusables/tree/main/examples).
 
 ## Contributions and Feedback
 
@@ -45,4 +45,4 @@ Contributions are highly appreciated! If you find a bug, have a feature request,
 
 ## License
 
-go-scaffolds is open-source and distributed under the [MIT License](https://github.com/canopas/go-scaffolds/blob/main/LICENSE).
+go-reusables is open-source and distributed under the [MIT License](https://github.com/canopas/go-reusables/blob/main/LICENSE).
