@@ -39,6 +39,7 @@ func SendEmail() {
 
 	data := &email.EmailData{
 		Title:            "email-title",
+		Subject:          "email-subject",
 		Sender:           "sender-email",
 		Receiver:         "receiver-email",
 		Charset:          "UTF-8",

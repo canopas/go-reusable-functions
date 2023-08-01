@@ -27,13 +27,14 @@ var dataInput = emailInput{
 }
 
 var emailData = EmailData{
-	Title:    "Test email",
-	Sender:   testEmail,
-	Receiver: testEmail,
-	Charset:  "UTF-8",
-	TemplateFs: templateFS,
+	Title:            "Test email",
+	Subject:          "Test email subject",
+	Sender:           testEmail,
+	Receiver:         testEmail,
+	Charset:          "UTF-8",
+	TemplateFs:       templateFS,
 	TemplatePatterns: "templates/*.html",
-	Input:  dataInput,
+	Input:            dataInput,
 }
 
 func TestGetHTMLOfEmailTemplateError(t *testing.T) {
