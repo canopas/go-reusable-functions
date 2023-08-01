@@ -28,7 +28,6 @@ var dataInput = emailInput{
 
 var emailData = EmailData{
 	Title:            "Test email",
-	Subject:          "Test email subject",
 	Sender:           testEmail,
 	Receiver:         testEmail,
 	Charset:          "UTF-8",

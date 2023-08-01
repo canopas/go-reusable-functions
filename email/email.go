@@ -25,9 +25,6 @@ type EmailData struct {
 	// title of email
 	Title string
 
-	// subject of email
-	Subject string
-
 	// sender's email address
 	Sender string
 
