@@ -3,8 +3,8 @@ package examples
 import (
 	"embed"
 
-	"github.com/canopas/go-scaffolds/email"
-	"github.com/canopas/go-scaffolds/file"
+	"github.com/canopas/go-reusables/email"
+	"github.com/canopas/go-reusables/file"
 
 	log "github.com/sirupsen/logrus"
 )

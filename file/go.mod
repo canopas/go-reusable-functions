@@ -1,4 +1,4 @@
-module github.com/canopas/go-scaffolds/file
+module github.com/canopas/go-reusables/file
 
 go 1.20
 

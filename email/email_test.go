@@ -2,7 +2,7 @@ package email
 
 import (
 	"embed"
-	"github.com/canopas/go-scaffolds/file"
+	"github.com/canopas/go-reusables/file"
 	"html/template"
 	"testing"
 

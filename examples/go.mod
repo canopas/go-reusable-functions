@@ -7,8 +7,8 @@ replace email => ../email
 replace file => ../file
 
 require (
-	github.com/canopas/go-scaffolds/email v0.0.0-20230731052909-8a5dc87ed95c
-	github.com/canopas/go-scaffolds/file v0.0.0-20230728124028-c1cf54ceb9ba
+	github.com/canopas/go-reusables/email v0.0.0-20230731052909-8a5dc87ed95c
+	github.com/canopas/go-reusables/file v0.0.0-20230728124028-c1cf54ceb9ba
 	github.com/sirupsen/logrus v1.9.3
 )
 
