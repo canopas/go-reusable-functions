@@ -1,11 +1,11 @@
 # JWT
 
-JWT is useful to authorizing resources or content of perticular applications. 
+JWT is useful for authorizing resources or content of particular applications. 
 Once the user is logged in, each subsequent request will include the JWT access token, allowing the user to access routes, services, and resources that are permitted with that token. 
 
 Read [JWT Introduction](https://jwt.io/introduction) for more information.
 
-Read detailed article on [JWT authenticaltion and its working](https://blog.canopas.com/jwt-in-golang-how-to-implement-token-based-authentication-298c89a26ffd).
+Read a detailed article on [JWT authentication and its working](https://blog.canopas.com/jwt-in-golang-how-to-implement-token-based-authentication-298c89a26ffd).
 
 ## Generating secret keys
 
@@ -15,4 +15,4 @@ Read detailed article on [JWT authenticaltion and its working](https://blog.cano
 
 ## Example
 
-Find working example of JWT-reusable at [JWT-Example](https://github.com/canopas/go-reusables/blob/main/examples/jwtAuth.go).
+Find a working example of JWT-reusable at [JWT-Example](https://github.com/canopas/go-reusables/blob/main/examples/jwtAuth.go).
