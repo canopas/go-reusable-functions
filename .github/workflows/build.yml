@@ -16,3 +16,4 @@ jobs:
         run: |
           cd file && go test . && cd ..
           cd email && go test . && cd ..
+          cd jwtAuth && go test . && cd ..
