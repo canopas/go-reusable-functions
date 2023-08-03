@@ -24,6 +24,7 @@ This repository aims to provide solid reusable functions of foundational tools t
 ## Installation
 
 - If you want to use the email function, install the package with: 
+
     ```
     go get github.com/canopas/go-reusables/email
     ```
