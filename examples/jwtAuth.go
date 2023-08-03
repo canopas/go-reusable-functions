@@ -1,9 +1,9 @@
 package examples
 
 import (
-	"fmt"
-
 	"github.com/canopas/go-reusables/jwtAuth"
+
+	log "github.com/sirupsen/logrus"
 )
 
 func GenerateTokens() {
@@ -15,12 +15,19 @@ func GenerateTokens() {
 		"user_id": 1,
 	}
 
-	accessToken := jwtAuth.GenerateAccessToken(accessKey, claims, 24) // 1 day, lifespan in hour ,
+	accessToken, err := jwtAuth.GenerateAccessToken(accessKey, claims, 24) // 1 day, lifespan in hour ,
 
-	refreshToken := jwtAuth.GenerateRefreshToken(refreshKey, claims, 8760) // 1 year, lifespan in hour
+	if err != nil{
+		log.Error(err)
+	}
 
-	fmt.Printf("Access token: %s ", &accessToken)
-	fmt.Printf("Refresh token: %s ", &refreshToken)
+	refreshToken, err := jwtAuth.GenerateRefreshToken(refreshKey, claims, 8760) // 1 year, lifespan in hour
+	if err != nil{
+		log.Error(err)
+	}
+
+	log.Info("Access token: ", &accessToken)
+	log.Info("Refresh token: ", &refreshToken)
 }
 
 func checkValidationsOFTokens(accessToken string, refreshToken string) {
@@ -30,16 +37,16 @@ func checkValidationsOFTokens(accessToken string, refreshToken string) {
 	claims, err := jwtAuth.ValidateAccessTokenWithData(accessToken, accessKey)
 
 	if err != nil {
-		fmt.Errorf("Error when validating accessToken: ", err)
+		log.Error(err)
 	}
 
-	fmt.Printf("Claims: %v", claims)
+	log.Info("Claims: ", claims)
 
 	validRefreshToken, err := jwtAuth.ValidateRefreshToken(refreshToken, refreshKey)
 
 	if err != nil {
-		fmt.Errorf("Error when validating refreshToken: ", err)
+		log.Error("Error when validating refreshToken: ", err)
 	}
 
-	fmt.Printf("validRefreshToken: %b", validRefreshToken)
+	log.Info("validRefreshToken: ", validRefreshToken)
 }
