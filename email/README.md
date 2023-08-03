@@ -1,8 +1,8 @@
 # Email
 
-Email is important when you want to improve more user engagement on your application. This functionality will keep up-to-date your users about your application.
+Email is important when you want to improve user engagement on your application. This functionality will keep up-to-date your users about your application.
 
-Amazon SES is a cloud email service provider that can integrate into any application for bulk email sending. Whether you use an email software to send transactional emails, marketing emails, or newsletter emails, you pay only for what you use.
+Amazon SES is a cloud email service provider that can integrate into any application for bulk email sending. Whether you use email software to send transactional emails, marketing emails, or newsletter emails, you pay only for what you use.
 
 ## Steps to use email-reusables
  
@@ -19,4 +19,4 @@ Amazon SES is a cloud email service provider that can integrate into any applica
 
 ## Example
 
-Find working example of Email-reusable at [Email-Example](https://github.com/canopas/go-reusables/blob/main/examples/email.go).
+Find a working example of Email-reusable at [Email-Example](https://github.com/canopas/go-reusables/blob/main/examples/email.go).
