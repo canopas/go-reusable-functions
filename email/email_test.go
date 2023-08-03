@@ -18,7 +18,9 @@ type emailInput struct {
 //go:embed templates/*.html
 var templateFS embed.FS
 
-var parsedTemplate = template.Must(template.ParseFS(templateFS, "templates/*.html"))
+const templatePatterns = "templates/*.html"
+
+var parsedTemplate = template.Must(template.ParseFS(templateFS, templatePatterns))
 var testEmail = "test@gmail.com"
 
 var dataInput = emailInput{
@@ -32,7 +34,7 @@ var emailData = EmailData{
 	Receiver:         testEmail,
 	Charset:          "UTF-8",
 	TemplateFs:       templateFS,
-	TemplatePatterns: "templates/*.html",
+	TemplatePatterns: templatePatterns,
 	Input:            dataInput,
 }
 
@@ -87,7 +89,7 @@ func TestGetEmailTemplateSuccess(t *testing.T) {
 
 func prepareEmailData(rawMail bool) {
 	emailData.TemplateFs = templateFS
-	emailData.TemplatePatterns = "templates/*.html"
+	emailData.TemplatePatterns = templatePatterns
 	emailData.TemplateName = "test.html"
 
 	if !rawMail {
