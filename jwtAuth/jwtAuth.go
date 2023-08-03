@@ -13,10 +13,10 @@ type JWTData struct {
 	CustomClaims map[string]interface{} `json:"custom,omitempty"`
 }
 
-/** 
+/**
 Generate accessToken usin given data
 
-accessKey: Secret access key 
+accessKey: Secret access key
 customClaims: your custom claims you want to add in token like user_id, device_id etc...
 lifeSpan: accessToken life time in hours
 **/
@@ -28,22 +28,22 @@ func GenerateAccessToken(accessKey string, customClaims map[string]interface{}, 
 	return token, err
 }
 
-/** 
+/**
 Generate refreshToken usin given data
 
-refreshKey: Secret refresh key 
+refreshKey: Secret refresh key
 customClaims: your custom claims you want to add in token like user_id, device_id etc...
 lifeSpan: accessToken life time in hours
 **/
 
 func GenerateRefreshToken(refreshKey string, customClaims map[string]interface{}, lifeSpan int) (string, error) {
-    
+
 	token, err := tokenWithClaims(customClaims, lifeSpan).SignedString([]byte(refreshKey))
 
 	return token, err
 }
 
-func tokenWithClaims(customClaims map[string]interface{}, lifeSpan int) *jwt.Token{
+func tokenWithClaims(customClaims map[string]interface{}, lifeSpan int) *jwt.Token {
 	claims := JWTData{
 		StandardClaims: jwt.StandardClaims{
 			ExpiresAt: time.Now().Add(time.Duration(lifeSpan) * time.Hour).Unix(),
@@ -54,12 +54,14 @@ func tokenWithClaims(customClaims map[string]interface{}, lifeSpan int) *jwt.Tok
 	return jwt.NewWithClaims(jwt.SigningMethodHS256, claims)
 }
 
-/** 
+/*
+*
 Validate given token using given key
 
 token: Access Token you want to validate
-key: Secret access key 
-**/
+key: Secret access key
+*
+*/
 func ValidateAccessTokenWithData(token string, key string) (map[string]interface{}, error) {
 
 	claims := &JWTData{}
@@ -86,11 +88,11 @@ func ValidateAccessTokenWithData(token string, key string) (map[string]interface
 	return claims.CustomClaims, err
 }
 
-/** 
+/**
 Validate given refreshToken using given refreshKey
 
 token: Refresh Token you want to validate
-key: Secret refresh key 
+key: Secret refresh key
 **/
 
 func ValidateRefreshToken(token string, key string) (bool, error) {

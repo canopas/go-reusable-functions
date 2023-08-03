@@ -1,7 +1,6 @@
 package jwtAuth
 
 import (
-
 	"testing"
 
 	"github.com/stretchr/testify/assert"

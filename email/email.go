@@ -46,7 +46,7 @@ type EmailData struct {
 	// Attachment bytes if any
 	FileBytes *bytes.Buffer
 
-	// Attachment file name. 
+	// Attachment file name.
 	// It should be with extension
 	FileName string
 
@@ -88,12 +88,12 @@ func getEmailTemplate(data *EmailData) (rawMail bool, emailTemplate interface{},
 	// Get Email with data
 	htmlBody, err := getEmailWithDataTemplate(data)
 
-	if err == nil{
+	if err == nil {
 		if rawMail {
 			emailTemplate = prepareRawEmailTemplate(htmlBody, data)
 		} else {
 			emailTemplate = prepareEmailTemplate(htmlBody, data)
-		}	
+		}
 	}
 
 	return rawMail, emailTemplate, err
@@ -157,7 +157,6 @@ func prepareRawEmailTemplate(htmlBody string, data *EmailData) (template *ses.Se
 	var emailRaw bytes.Buffer
 	msg.WriteTo(&emailRaw)
 
-
 	// Message for raw email
 	message := ses.RawMessage{
 		Data: emailRaw.Bytes(),
@@ -173,4 +172,3 @@ func prepareRawEmailTemplate(htmlBody string, data *EmailData) (template *ses.Se
 
 	return template
 }
-
