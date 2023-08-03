@@ -11,6 +11,12 @@ This repository aims to provide solid reusable functions of foundational tools t
 - 🧰 Build upon strong reusables of well-tested Go functions.
 - ⚡ Boost productivity and code readability in your projects.
 
+## Functionalities
+
+- [SES email](https://github.com/canopas/go-reusables/tree/main/email) - Seemlessly Send email using AWS SES
+- [JWT authentication](https://github.com/canopas/go-reusables/tree/main/jwtAuth) - Easily generate JWT tokens and validate them.
+- [File manipulations](https://github.com/canopas/go-reusables/tree/main/file)
+
 ## Requirements
 
 - Go v1.20
@@ -21,12 +27,6 @@ This repository aims to provide solid reusable functions of foundational tools t
     ```
     go get github.com/canopas/go-reusables/email
     ```
-
-## Functionalities included,
-
-- [SES email](https://github.com/canopas/go-reusables/tree/main/email) - Seemlessly Send email using AWS SES
-- [JWT authentication](https://github.com/canopas/go-reusables/tree/main/jwtAuth) - Easily generate JWT tokens and validate them.
-- [File manipulations](https://github.com/canopas/go-reusables/tree/main/file)
 
 ## Usage
 
