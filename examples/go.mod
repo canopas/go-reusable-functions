@@ -2,10 +2,6 @@ module examples
 
 go 1.20
 
-replace email => ../email
-
-replace file => ../file
-
 require (
 	github.com/canopas/go-reusables/email v0.0.0-20230801123715-3957df64671f
 	github.com/canopas/go-reusables/file v0.0.0-20230801123715-3957df64671f

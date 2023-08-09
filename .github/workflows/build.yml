@@ -17,3 +17,4 @@ jobs:
           cd file && go test . && cd ..
           cd email && go test . && cd ..
           cd jwtAuth && go test . && cd ..
+          cd util && go test . && cd ..
