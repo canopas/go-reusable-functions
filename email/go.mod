@@ -3,8 +3,8 @@ module github.com/canopas/go-reusables/email
 go 1.20
 
 require (
-	github.com/aws/aws-sdk-go v1.44.313
-	github.com/canopas/go-reusables/file v0.0.0-20230801123715-3957df64671f
+	github.com/aws/aws-sdk-go v1.44.319
+	github.com/canopas/go-reusables/file v0.0.0-20230809055412-55dee4feb1ec
 	github.com/sirupsen/logrus v1.9.3
 	github.com/stretchr/testify v1.8.4
 	gopkg.in/gomail.v2 v2.0.0-20160411212932-81ebce5c23df
